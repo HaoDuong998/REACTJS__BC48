@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.439)
+}
+
+li {
+  list-style: none;
+}
+
+.navbar__right a{
+  font-size: 20px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.navbar__right a::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.navbar__right a:hover::after {
+  width: 100%;
+  color: rgb(198, 64, 64);
+}
+
+.navbar__right li{
+  margin-top: 10px;
+}
+
+.navbar__left a{
+  font-size: 30px;
+  position: relative;
+  color: white;
+}
+
+.navbar__left a::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  position: absolute;
+  transition: all 0.5s;
+
+}
+
+.navbar__left a:hover::after {
+  width: 100%;
+}
+
+/* Product */
+.card {
+  margin-left: 46px;
+  margin-bottom: 40px;
+}
+.card .card__top {
+  padding: 50px;
+}
+
+.card .card__button{
+  margin-left: 50px;
+}
